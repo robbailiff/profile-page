@@ -30,42 +30,43 @@
                 </ul>
             </nav>
         </header>
-        <article class="intro-page">
-            <h1>Welcome!</h1>
+        <section class="intro-page">
             <div class="intro-text">
-                <p>I have used Python scripts in my day job as a Geoscientist for a long time and never knew how they worked or how to code. 
-                    When looking for a new skill to learn, I came across Python and realised that I really enjoy the problem solving side of programming and that learning 
-                    it has a tangible benefit in my day to day working, as well as an application to many Geoscience problems.</p>
-                <p>I was inspired to setup up this website as somewhere to be able to showcase some of the projects I have completed and to blog about things I have learnt. 
-                    It helps me cement the knowledge I have gained but I also hope that it may be of help to someone else.</p>
+                <h1>Welcome!</h1>
+                <p>Hello, I'm <span>Rob</span>. I am a geoscientist and software development enthusiast based in Leeds.</p>
             </div>
             <div class="footbar"></div>
-        </article>
-
-        <article class="about-page" id="about">
+        </section>
+        
+        <section class="about-page" id="about">
             <h1>About</h1>
             <div class="about-content">
                 <img src="images/rob.jpg" alt="Picture of Rob">
                 <div class="about-text">
-                    <p>I have been working as a Geoscientist for over 13 years with my focus mostly on research and mapping of palaeogeology and palaeogeography. 
+                    <p>I have been working as a Geoscientist for over 13 years and I have used Python scripts for a long time and never knew how they worked or how to code. 
+                        When looking for a new skill to learn, I came across Python and realised that I really enjoy the problem solving side of programming 
+                        and that learning it has a tangible benefit in my day to day working, as well as an application to many Geoscience problems. Since then I have been actively self-learning 
+                        programming languages and tools in my spare time for the last few years to improve my effectiveness at my job, but also add skills which could allow me to transition 
+                        to another career.</p>
+                    <p> I have seen a gradual move away from the use and production of “old school” paper maps to fully digital workflows using software such as ArcGIS. 
+                        I can only see this trend continuing in the future and this is ultimately what has led me to want to learn more about programming and improve my digital skills. 
+                        Areas that are especially of interest to me are web/software development, automation of manual processes, and the application of Data Science and Machine Learning techniques to Geoscience problems.</p>
+                    <p> During my time working as a Geoscientist, my focus has been mostly on research and mapping of palaeogeology and palaeogeography. 
                         Most of the projects I have worked on have been multidisciplinary, involving big teams, large datasets and with a regional to global focus. 
                         In particular, I have spent a lot of time working on North America and enjoy the balance of the quantity and quality of available data in conjunction 
                         with challenging geological problems to solve in this region.</p>
-                    <p>During my time working in these fields I have seen a gradual move away from the use and production of “old school” paper maps to fully digital workflows 
-                        using software such as ArcGIS. I can only see this trend continuing in the future and this is ultimately what has led me to want to learn Python programming. 
-                        The automation of many manual processes and the application of Data Science and Machine Learning techniques to Geoscience data are areas that especially interest me.</p>
                     <p>Outside of work, I spend most of my time entertaining my young family, and use most of my spare time for learning and self improvement. 
                         I have a keen interest in wildlife and the natural world, and combine this with a love of walking and hiking the outdoors. 
                         I also have a love for homebrewing beer, and I am an avid fan of football, cricket and ice hockey.</p>
                 </div>
             </div>
             <div class="footbar"></div>
-        </article>
+        </section>
 
-        <article class="skills-page" id="skills">
+        <section class="skills-page" id="skills">
             <div class="skills-content">
                 <h1>Skills</h1>
-                <p>Here is a list of skills I have experience with below. </p>
+                <p>This is a list of selected technical skills with which I have significant experience.</p>
                     <div class="skills-icons">
                         <!-- Icons taken from iconscout -->
                         <img src="images/python_icon.svg"/>  
@@ -81,38 +82,48 @@
                     </div>
                 </div>
             <div class="footbar"></div>
-        </article>
+        </section>
 
-        <article class="projects-page">
+        <section class="projects-page" id="projects">
             <div class="projects-content"></div>
                 <h1>Projects</h1>
-                <p>Here are some of the projects I have worked on.</p>
+                <p>This is a list of some of most recent projects I have completed.</p>
                 <div class="cards">
                     <div class="card">
-                        <img alt="" src="https://assets.codepen.io/123865/dog.png">
-                        <h1>I Am Dog</h1>
+                        <h1>Rock, Paper, Scissors</h1>
+                        <a href="https://robbailiff.github.io/rock-paper-scissors/"><img src="images/rock.png" alt="Rock, Paper, Scissors Project Image"></a>
+                        <p>This project was created in Javascript to practice control flow, loops and DOM interaction. The game allows the user to make their choice via clicking a button, 
+                            generates a random choice for the computer player, displays the running score, and announces the winner of the game once one player reaches 5 points.</p>
                     </div> 
                     <div class="card">
-                        <img alt="" src="https://assets.codepen.io/123865/dog.png">
-                        <h1>I Am Dog</h1>
-                    </div> 
+                        <h1>Etch-A-Sketch</h1>
+                        <a href="https://robbailiff.github.io/etch-a-sketch/"><img src="images/etch.png" alt="Etch-A-Sketch Project Image"></a>
+                        <p>This is a browser based Etch-A-Sketch application which works by creating a grid of squares, which change colour when a mouse passes over them to effectively draw an image. 
+                            It allows the user to choose different colours to draw with, as well as the grid size and the ability to clear the current sketch.</p>
+                    </div>
+                    <div class="card">
+                        <h1>Scorekeeper</h1>
+                        <a href="https://robbailiff.github.io/scorekeeper/"><img src="images/scorekeeper.png" alt="Scorekeeper Project Image"></a>
+                        <p>This is a score keeper widget for a game of ping pong built using the Bulma CSS framework. It allows the user to set the number of wins required, use buttons to increase the wins for a player, 
+                            indicate when one player has won the required number of games and then change the score colours and disable the buttons, and then finally a buttom to reset the scores.</p>
+                    </div>  
                 </div>
             </div>
             <div class="footbar"></div>
-        </article>
+        </section>
 
-        <article class="contact-page" id="contact">
+        <section class="contact-page" id="contact">
             <h1>Contact</h1>
-            <p>Want to get in contact or learn more about me?</p>
-            <p>Please email me or connect with me on social media!</p>
+            <p>Want to get in contact or learn more about me? Please email me or connect with me on social media!</p>
             <div class="contact-links">
-                <a href="mailto:robbailiff@gmail.com"><img src="" alt="Email"></a>
-                <a href="https://www.linkedin.com/in/robbailiff"><img src="" alt="LinkedIn"></a>
-                <a href="https://github.com/robbailiff"><img src="" alt="GitHub"></a>
-                <a href="https://twitter.com/Rob_Bailiff"><img src="" alt="Twitter"></a>
+                <!-- Icons taken from iconscout -- created by Apache 2.0-->
+                <a href="mailto:robbailiff@gmail.com"><img src="images/email.svg" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/robbailiff"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/robbailiff"><img src="images/github.svg" alt="GitHub"></a>
+                <a href="https://twitter.com/Rob_Bailiff"><img src="images/twitter.svg" alt="Twitter"></a>
             </div>
             <div class="footbar"></div>
-        </article>
+        </section>
     </main>
 </body>
 </html>

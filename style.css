@@ -4,9 +4,10 @@ body, html {
     width: 100%;
     height: 100%;
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
+    background-color: #f6f6f8;
 }
 
 main {
@@ -19,6 +20,10 @@ h1 {
     margin-bottom: 0;
 }
 
+h1, nav a, .card h1 {
+    color: #000;
+}
+
 header {
     font-size: 1.5em;
     padding: 0.25rem;
@@ -27,12 +32,19 @@ header {
 }
 
 .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
+.logo:hover {
+    color: #ca2017;
 }
 
 nav {
     display: flex;
     justify-content: right;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ca2017;
 }
 
 ul,li {
@@ -41,18 +53,76 @@ ul,li {
     padding: 0;
 }
 
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ca2017;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px #ca2017;
+}
+
 p {
     font-size: 1rem;
     padding: 0.5rem 15%;
     text-align: justify;
 }
 
+.intro-text {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Adapted from https://yuanchuan.dev/gradient-shapes/ */
+    background:
+        linear-gradient(
+            110deg,
+            transparent 30%, #e3e3e3 30%,
+            #e3e3e3 70%, transparent 70%
+            )
+            50% / 200% 40%
+            no-repeat;
+}
+
+@media only screen and (max-width: 550px) {
+    .intro-text{
+        background:
+        linear-gradient(
+            110deg,
+            transparent 30%, #e3e3e3 30%,
+            #e3e3e3 70%, transparent 70%
+            )
+            50% / 200% 50%
+            no-repeat;
+    }
+}
+
+.intro-text h1 {
+    color: #ca2017;
+}
+
+.intro-text p {
+    font-size: 2rem;
+}
+
+span {
+    font-weight: 700;
+    color: #ca2017;
+}
+
 .footbar{
     width: 100%;
     height: 0.3rem;
     margin-top: 1rem;
-    background: #e100ff;
-    background: linear-gradient(90deg, rgba(255, 0, 255, 1) 0, rgba(255,55,0,1) 100%);
+    background-color: #ca2017
 }
 
 .about-content{
@@ -65,18 +135,18 @@ p {
     width: 20%;
     border-radius: 50%;
     box-shadow: 0 0 20px #000;
-    margin: 1rem 1rem;
+    margin: 2rem;
 }
 
 .skills-content {
-    margin: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .skills-content p {
-    margin: 40px;
+    margin: 20px 40px;
     text-align: center;
 }
 
@@ -88,7 +158,7 @@ p {
 .skills-icons img {
     height: 150px;
     width: 150px;
-    margin: 25px;
+    margin: 50px;
     padding: 0;
     transition: 0.5s;
 }
@@ -98,9 +168,10 @@ p {
     margin: 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .skills-icons {
         display: grid;
+        grid-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
     .skills-icons img {
@@ -142,30 +213,64 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 800px) {
-    .cards {
-        flex-direction: column;
-    }
+    padding-bottom: 10px;
 }
 
 .card {
-    width: 210px;
-    border: 1px solid grey;
+    flex: 1;
+    width: 300px;
+    margin: 20px;
+    padding: 0 10px;
+    border: 2px solid #ca2017;
     border-radius: 5px;
     text-align: center;
+    background-color: #e3e3e3;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .card img {
+    height: 200px;
     width: 200px;
-    border: 5px solid rgb(236,183,191);
+    border: 3px solid black;
     border-radius: 50%;
+}
+
+.card img:hover {
+    border-color:  #ca2017;
+    box-shadow: 0 0 1px 1px #ca2017;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-links img {
+    width: 50px;
+    margin: 20px;
+}
+
+.contact-links img:hover {
+    filter: brightness(0);
 }
 
 @media (max-width: 768px){
     h1{
         font-size: 3em;
+    }
+    header{
+        font-size: 1rem;
     }
 }
 
@@ -173,7 +278,13 @@ p {
     h1{
         font-size: 2em;
     }
-    header{
+    .logo {
         font-size: 1rem;
+    }
+    .intro-text {
+        height: 60vh
+    }
+    .intro-text p {
+        font-size: 1.5rem;
     }
 }
