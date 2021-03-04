@@ -8,6 +8,7 @@ body, html {
     display: flex;
     justify-content: center;
     background-color: #f6f6f8;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -70,7 +71,7 @@ nav a:hover {
 
 p {
     font-size: 1rem;
-    padding: 0.5rem 15%;
+    padding: 0.5rem 5%;
     text-align: justify;
 }
 
@@ -111,6 +112,7 @@ p {
 
 .intro-text p {
     font-size: 2rem;
+    padding: 0.5rem 15%;
 }
 
 span {
@@ -281,8 +283,11 @@ span {
     .logo {
         font-size: 1rem;
     }
+    header{
+        font-size: 0.9rem;
+    }
     .intro-text {
-        height: 60vh
+        height: 80vh
     }
     .intro-text p {
         font-size: 1.5rem;
